@@ -1,0 +1,488 @@
+/* menu responsive */
+.nav-overlay{
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display:none;
+}
+.menu-responsive{
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width:100%;
+    max-width: 640px;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.4s;
+    opacity: 0;
+}
+.menu-responsive a{
+    color:#262626 !important;
+    text-decoration: none;
+    font-size:20px !important;
+}
+.menu-content{
+    padding:20px;
+}
+.menu-content> li{
+    display:block !important;
+    text-align:left;
+    border-bottom: 2px solid #ccc !important;
+    padding-bottom: 0 !important;
+}
+.icon-close-menu{
+    text-align: right;
+}
+#check-box:checked ~ .nav-overlay{
+    display:block;
+}
+#check-box:checked ~ .menu-responsive{
+    transform: translateX(0%);
+    opacity:1;
+
+}
+.service-btn-nav{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 4px solid #ccc;
+}
+
+
+/* Màn hình chiều dọc cho smartphone nhỏ */
+@media (max-width: 320px){
+    #header{
+        padding-bottom: 70%;
+    }
+    body {
+        min-width: 320px;
+    }
+    .car-sub .title {
+        font-size: 30px;
+    }
+    .car-sub .content {
+        font-size: 16px;
+    }
+    .car-display-1-content, 
+    .car-display-2-content{
+        width:60%;
+    }
+    .car-display .model-name{
+        font-size: 15px;
+    }
+    .build-and-price-btn,
+    .boder-btn{
+        line-height:35px;
+        font-size: 15px;
+    }
+    .margin-auto{
+        width:98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .started,
+    .build-and-price,
+    .find-a-dealer,
+    .buy-online{
+        border-right: none;
+        border-top: 4px solid #fff;
+    }
+    .started{
+        text-align: center;
+        width:100%;
+    }
+    .build-and-price{
+        width:100%;
+    }
+    .buy-online,
+    .find-a-dealer{
+        width: 100%;
+    }
+    .cars-items{
+        width:100%;
+    }
+    .suggestions-item{
+        width:100%;
+        padding-bottom:10px;
+    }
+    .service-item{
+        width: 100%;
+    }
+    .service-title{
+        font-size:14px;
+        min-height: 70px;
+    }
+    .sticky-content{
+        font-size:10px;
+    }
+    .sticky-item{
+        margin: 0;
+        padding:0;
+    }
+    .visit-us{
+        display:block;
+        text-align:center;
+        padding: 40px 0 0 0;
+        padding: 40px 0 0 0;
+    }
+    .visit-title{
+        margin: 0;
+        font-size:16px;
+    }
+    .footer-nav{
+        border-top: none;
+    }
+    .footer-nav-column{
+        width:100%;
+        border-top: 1px solid #ccc;
+        padding:20px 0;
+    }
+    .footer-end{
+        text-align: center;
+    }
+    .copyrighted{
+        width:100%;
+    }
+    .footer-end-item{
+        width:100%;
+    }
+}
+/* Màn hình chiều ngang cho smartphone nhỏ */
+@media (min-width:321px) and (max-width: 480px){
+    .car-sub .title {
+        font-size: 30px;
+    }
+
+    .car-sub .content {
+        font-size: 16px;
+    }
+    #header{
+        padding-bottom: 70%;
+    }
+    .car-display-1-content, 
+    .car-display-2-content{
+        width:50%;
+    }
+    .car-display .model-name{
+        font-size: 17px;
+    }
+    .boder-btn{
+        line-height:36px;
+        font-size: 16px;
+    }
+    .margin-auto{
+        width:98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .started,
+    .build-and-price,
+    .find-a-dealer,
+    .buy-online{
+        border-right: none;
+        border-top: 4px solid #fff;
+    }
+    .started{
+        text-align: center;
+        width:100%;
+    }
+    .build-and-price{
+        width:100%;
+    }
+    .buy-online,
+    .find-a-dealer{
+        width: 50%;
+    }
+    .cars-items{
+        width:50%;
+    }
+    .suggestions-item{
+        width:100%;
+        padding-bottom:10px;
+    }
+    .service-item{
+        width: 50%;
+    }
+    .service-title{
+        font-size:16px;
+        min-height: 140px;
+    }
+    .sticky-item{
+        margin: 0;
+        padding:0;
+    }
+    .sticky-content{
+        font-size:10px;
+    }
+    .visit-us{
+        display:block;
+        text-align:center;
+        padding: 40px 0 0 0;
+    }
+    .visit-title{
+        margin: 0;
+        font-size:16px;
+    }
+    .footer-nav{
+        border-top: none;
+    }
+    .footer-nav-column{
+        width:100%;
+        border-top: 1px solid #ccc;
+        padding:20px 0;
+    }
+    .footer-end{
+        text-align: center;
+    }
+    .copyrighted{
+        width:100%;
+    }
+    .footer-end-item{
+        width:100%;
+    }
+}
+/* Màn hình chiều ngang cho smartphone vừa */
+@media (min-width:481px) and (max-width: 640px){
+    #header{
+        padding-bottom: 50%;
+    }
+    .car-sub .title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .car-display .model-name{
+        font-size: 17px;
+    }
+    
+    .margin-auto{
+        width:98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .started,
+    .build-and-price,
+    .find-a-dealer,
+    .buy-online{
+        border-right: none;
+        border-top: 4px solid #fff;
+    }
+    .started{
+        text-align: center;
+        width:100%;
+    }
+    .build-and-price{
+        width:100%;
+    }
+    .buy-online,
+    .find-a-dealer{
+        width: 50%;
+    }
+    .cars-items{
+        width:50%;
+    }
+    .suggestions-item{
+        width:100%;
+        padding-bottom:15px;
+    }
+    .service-item{
+        width: 50%;
+    }
+    .service-title{
+        font-size:16px;
+        min-height: 140px;
+    }
+    .visit-us{
+        display:block;
+        text-align:center;
+        padding: 40px 0 0 0;
+    }
+    .visit-title{
+        margin: 0;
+    }
+    .footer-nav{
+        border-top: none;
+    }
+    .footer-nav-column{
+        width:100%;
+        border-top: 1px solid #ccc;
+        padding:20px 0;
+    }
+    .footer-end{
+        text-align: center;
+    }
+    .copyrighted{
+        width:100%;
+    }
+    .footer-end-item{
+        width:100%;
+    }
+    .footer-end{
+        text-align: center;
+    }
+    .copyrighted{
+        width:100%;
+    }
+    .footer-end-item{
+        width:100%;
+    }
+}
+@media (max-width:641px){
+    .car-sub{
+        top: auto;
+        bottom: 10%;
+    }
+    .nav-icon{
+        position: absolute;
+        right:0;
+        margin-top: 5%;
+    }
+    .nav-icon li{
+        display:none !important;
+    }
+    
+}
+/* Màn hình chiều dọc cho tablet */
+@media (min-width:641px) and (max-width: 768px){
+    .car-display .model-name{
+        font-size: 20px;
+    }
+    .car-sub {
+        top: 30%;
+        width: 30%;
+        left: 30px;
+    }
+    .car-sub .title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .car-sub .content {
+        font-size: 20px;
+    }
+    .get-started{
+        width:100%;
+    }
+    .started,
+    .build-and-price,
+    .find-a-dealer,
+    .buy-online{
+        border-right: none;
+        border-top: 4px solid #fff;
+    }
+    .started{
+        text-align: center;
+        width:100%;
+    }
+    .build-and-price{
+        width:100%;
+    }
+    .buy-online,
+    .find-a-dealer{
+        width: 50%;
+    }
+    .cars-items{
+        width:50%;
+    }
+    .service-title{
+        font-size:16px;
+        min-height: 140px;
+    }
+    .visit-us{
+        display:block;
+        text-align:center;
+    }
+    .visit-title{
+        margin: 0;
+    }
+    .footer-nav{
+        border-top: none;
+    }
+    .footer-nav-column{
+        width:100%;
+        border-top: 1px solid #ccc;
+        padding:20px 0;
+    }
+    .footer-end{
+        text-align: center;
+    }
+    .copyrighted{
+        width:100%;
+    }
+    .footer-end-item{
+        width:100%;
+    }
+    .footer-end{
+        text-align: center;
+    }
+    .copyrighted{
+        width:100%;
+    }
+    .footer-end-item{
+        width:100%;
+    }
+    
+}
+@media (max-width:1024px){
+    .nav-icon{
+        position: absolute;
+        right:0;
+    }
+    .nav-title li{
+        display:none !important;
+    }
+    #header .menu-btn{
+        display: block;
+    }
+    .slogan{
+        display:none !important;
+    }
+    .search{
+        display:none !important;
+    }
+    
+}
+
+@media (min-width:769px) and (max-width: 979px){
+    .car-sub {
+        top: 30%;
+        width: 25%;
+    }
+    .car-sub .title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .car-sub .content {
+        font-size: 20px;
+    }
+    
+}
+/* Màn hình chiều ngang cho tablet */
+@media (min-width:769px) and (max-width: 1200px){
+    
+    .get-started{
+        width:100%;
+    }
+    .service-title{
+        font-size:16px;
+        min-height: 140px;
+    }
+    .footer-end{
+        text-align: center;
+    }
+    .copyrighted{
+        width:100%;
+    }
+    .footer-end-item{
+        width:100%;
+    }
+}
+@media (max-width:980px){
+    .car-item{
+        width:100%;
+        padding:0;
+    }
+}
